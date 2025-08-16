@@ -1,0 +1,47 @@
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+   border: 16px solid white;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+a {
+  font-weight: 500;
+  color: beige;
+  text-decoration: inherit;
+}
+a:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+}
+
+video {
+  position: fixed; /* Positions the video relative to the viewport */
+  right: 0;
+  bottom: 0;
+  min-width: 100%; /* Ensures the video covers at least 100% of the viewport width */
+  min-height: 100%; /* Ensures the video covers at least 100% of the viewport height */
+  object-fit: cover; /* Resizes the video to fill the container while maintaining aspect ratio and cropping if necessary */
+  z-index: -1; /* Places the video behind other content */
+}
