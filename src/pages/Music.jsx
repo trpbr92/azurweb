@@ -1,7 +1,9 @@
+import "../css/Music.css";
+
 function Music() {
   return (
     <>
-      <h3>Music</h3>
+      <h3>azurweb radio</h3>
     </>
   );
 }
