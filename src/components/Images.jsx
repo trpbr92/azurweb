@@ -7,19 +7,13 @@ function Images(props) {
   };
 
   return (
-    <>
-      <div className="images-container">
-        {data.map((slide, index) => (
-          <div
-            onClick={() => handleOnClick(index)}
-            key={index}
-            className="image"
-          >
-            <img src={slide.src} alt={slide.description} />
-          </div>
-        ))}
-      </div>
-    </>
+    <div className="images-container">
+      {data.map((item, index) => (
+        <div onClick={() => handleOnClick(index)} key={index} className="image">
+          <img src={item.src} alt={item.description} />
+        </div>
+      ))}
+    </div>
   );
 }
 export default Images;

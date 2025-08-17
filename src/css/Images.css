@@ -1,10 +1,16 @@
 .images-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+    margin: 20px;
+      column-gap: 10px;
+  row-gap: 15px;
+}
 .image {
     cursor: pointer;
+}
+
+img{
+  width: 500px;
+  height: auto; /* Maintain aspect ratio */
 }

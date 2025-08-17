@@ -27,6 +27,7 @@ function Photos() {
       <Lightbox
         plugins={[Captions, Fullscreen]}
         // open={open}
+        index={index}
         slides={slides}
         open={index >= 0}
         close={() => setIndex(-1)}
