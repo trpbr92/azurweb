@@ -11,7 +11,8 @@ import {
 } from "yet-another-react-lightbox/plugins";
 
 function Photos() {
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
+  const [index, setIndex] = React.useState(-1);
 
   return (
     <>
@@ -19,15 +20,17 @@ function Photos() {
       <Images
         data={slides}
         onClick={(currentIndex) => {
-          console.log(currentIndex);
+          setIndex(currentIndex);
         }}
       />
 
       <Lightbox
         plugins={[Captions, Fullscreen]}
-        open={open}
+        // open={open}
         slides={slides}
-        close={() => setOpen(false)}
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        // close={() => setOpen(false)}
       />
     </>
   );
