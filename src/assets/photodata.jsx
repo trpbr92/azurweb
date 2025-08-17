@@ -9,4 +9,9 @@ export const slides = [
     title: "bushes 2024",
     description: "bushes",
   },
+  {
+    src: "src/assets/photos/img3.jpg",
+    title: "NYC 2023",
+    description: "bushes",
+  },
 ];

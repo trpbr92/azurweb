@@ -15,8 +15,13 @@ function Photos() {
 
   return (
     <>
-      <button onClick={() => setOpen(true)}>Open Lightbox</button>
-      <Images data={slides} onClick={() => {}} />
+      {/* <button onClick={() => setOpen(true)}>Open Lightbox</button> */}
+      <Images
+        data={slides}
+        onClick={(currentIndex) => {
+          console.log(currentIndex);
+        }}
+      />
 
       <Lightbox
         plugins={[Captions, Fullscreen]}
