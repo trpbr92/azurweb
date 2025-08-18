@@ -1,19 +1,16 @@
+import { Link } from "react-router-dom";
 import "../css/Images.css";
 
-function Images(props) {
-  const { data, onClick } = props;
-  const handleOnClick = (index) => {
-    onClick(index);
-  };
-
+function Images({ data }) {
   return (
-    <div className="images-container">
-      {data.map((item, index) => (
-        <div onClick={() => handleOnClick(index)} key={index} className="image">
-          <img src={item.src} alt={item.description} />
-        </div>
+    <div>
+      {data.map((img, index) => (
+        <Link key={index} to={`/photos/${index}`}>
+          <img src={img.src} alt={img.title || `Image ${index}`} />
+        </Link>
       ))}
     </div>
   );
 }
+
 export default Images;
