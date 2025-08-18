@@ -15,7 +15,7 @@ function Albums() {
         onClick={(currentIndex) => {
           setIndex(currentIndex);
           console.log(currentIndex);
-          navigate("/photos");
+          navigate(`/photos/${currentIndex}`);
         }}
       />
     </>
