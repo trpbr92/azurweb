@@ -3,7 +3,7 @@ import "../css/Images.css";
 
 function Images({ data }) {
   return (
-    <div>
+    <div className="images-container">
       {data.map((img, index) => (
         <Link key={index} to={`/photos/${index}`}>
           <img src={img.src} alt={img.title || `Image ${index}`} />
