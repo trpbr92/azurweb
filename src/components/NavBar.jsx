@@ -10,7 +10,7 @@ function NavBar() {
           <Link to="/">home</Link>
           <Link to="/about">about</Link>
           <Link to="/music">music</Link>
-          <Link to="/photos">photos</Link>
+          <Link to="/albums">photos</Link>
         </div>
       </div>
     </nav>

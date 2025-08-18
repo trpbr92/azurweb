@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Photos from "./pages/Photos";
 import Music from "./pages/Music";
+import Albums from "./pages/Albums";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/photos" element={<Photos />} />
           <Route path="/music" element={<Music />} />
+          <Route path="/albums" element={<Albums />} />
         </Routes>
       </main>
     </>
