@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { albums } from "../assets/PhotoAlbumData.jsx";
 
@@ -10,8 +9,8 @@ function Photos() {
 
   return (
     <div>
-      <h2>{albumId.toUpperCase()} Album</h2>
-      <div>
+      <h2>{albumId} album</h2>
+      <div className="images-container">
         {photos.map((photo, index) => (
           <img key={index} src={photo.src} alt={photo.title} />
         ))}
