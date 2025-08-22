@@ -17,5 +17,16 @@
   }
 
 
+
+a:hover {
+  color: red;
 }
 
+a {
+  font-weight: 500;
+  color: beige;
+  text-decoration: inherit;
+}
+
+
+}
