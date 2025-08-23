@@ -23,11 +23,15 @@ body {
 }
 
 video {
-  position: fixed; /* Positions the video relative to the viewport */
-  right: 0;
-  bottom: 0;
-  min-width: 100%; /* Ensures the video covers at least 100% of the viewport width */
-  min-height: 100%; /* Ensures the video covers at least 100% of the viewport height */
-  object-fit: cover; /* Resizes the video to fill the container while maintaining aspect ratio and cropping if necessary */
-  z-index: -1; /* Places the video behind other content */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;     /* fill width */
+  min-height: 100%;    /* fill height */
+  width: auto;         /* don't stretch */
+  height: auto;        /* don't stretch */
+  transform: translate(-50%, -50%); /* center the video */
+  object-fit: contain; /* scale without cropping */
+  background: black;   /* fill empty space */
+  z-index: -1;
 }

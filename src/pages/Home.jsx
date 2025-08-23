@@ -1,10 +1,10 @@
-import ernie from "../assets/ernie.mp4";
+import wave from "../assets/wave.mp4";
 
 function Home() {
   return (
     <>
-      <div className="main">
-        <video src={ernie} autoPlay loop muted />
+      <div>
+        <video src={wave} autoPlay loop muted />
       </div>
     </>
   );

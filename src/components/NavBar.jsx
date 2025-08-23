@@ -15,9 +15,10 @@ function NavBar() {
               className="nav-home"
             />
           </Link>
-          <Link to="/about">about</Link>
           <Link to="/music">music</Link>
           <Link to="/albums">photos</Link>
+          <Link to="/blog">blog</Link>
+          <Link to="/about">about</Link>
         </div>
       </div>
     </nav>

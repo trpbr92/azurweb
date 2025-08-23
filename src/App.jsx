@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Photos from "./pages/Photos";
 import Music from "./pages/Music";
 import Albums from "./pages/Albums";
+import Blog from "./pages/Blog";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/photos/:albumId" element={<Photos />} />
           <Route path="/music" element={<Music />} />
           <Route path="/albums" element={<Albums />} />
+          <Route path="/blog" element={<Blog />} />
         </Routes>
       </main>
     </>
